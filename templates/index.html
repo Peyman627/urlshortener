@@ -61,10 +61,6 @@
             flex: 1;
             background-color: transparent;
             color: white;
-
-            &:hover {
-                background-color: rgba(255, 255, 255, 0.5);
-            }
         }
 
         section {
@@ -102,7 +98,7 @@
                 csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
             },
             success: function (data) {
-                $('h2').html("www.surls.ga/" + data)
+                $('h2').html("localhost:8000/" + data)
             }
         });
     });
